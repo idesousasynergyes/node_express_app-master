@@ -58,7 +58,7 @@ jobs:
     name: Deploy to Azure Web App
     needs: build
     runs-on: ubuntu-latest
-    environment: production  # ✅ Correct placement
+    environment: production
 
     steps:
       - name: Download Build Artifact
@@ -99,4 +99,3 @@ jobs:
       - name: Run Functional Tests
         run: |
           echo "Running functional tests"
-          # Add your actual test commands here
